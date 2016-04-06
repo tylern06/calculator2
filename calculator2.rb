@@ -15,5 +15,8 @@ class Calculator
 		self
 	end
 	
+	def multiply(x,y)
+		@result *= (x+y)
+		self
 end
 	
