@@ -9,5 +9,11 @@ class Calculator
 		@result += x + y
 		self
 	end
+
+	def subtract(n1=0,n2)
+		@result += n1 -n2
+		self
+	end
+	
 end
 	
