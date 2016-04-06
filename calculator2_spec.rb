@@ -4,6 +4,7 @@ RSpec.describe Calculator do
 
 	before do
 		@subtractor = Calculator.new
+		@divisor = Calculator.new
 	end
 
 	it 'has to add with two parameters #1' do
@@ -45,6 +46,13 @@ RSpec.describe Calculator do
 		@subtractor.subtract(100,10).subtract(5)
 		expect(@subtractor.result).to eq(85)
 	end
+
+	it "can divide" do
+
+		@divisor.divide(10,2)
+		expect(@divisor.result).to eq(5)
+	end
+
 
 	# it "subtracts fractions" do
 	# 	@subtractor.subtract(10,3.47)
